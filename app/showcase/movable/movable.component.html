@@ -1,0 +1,24 @@
+<div [class.no-selectable]="movable.moving">
+  <div class="playground">
+    <div #inner="uiMeasure"
+         #movable="uiMovable" (uiMoveStop)="inner.update()"
+         [style.left.px]="inner.offsetRect.left + movable.offset.x"
+         [style.top.px]="inner.offsetRect.top + movable.offset.y" class="movable"
+         uiMeasure
+         uiMovable
+    >
+    </div>
+  </div>
+  <div class="alert alert-info">
+    <div class="row">
+      <div class="col-md-6">
+        <span i18n>delta</span>
+        ( x: {{movable.offset.x}}, y: {{movable.offset.y}} )
+      </div>
+      <div class="col-md-6">
+        <span i18n>pos</span>
+        ( x: {{inner.offsetRect.left}}, y: {{inner.offsetRect.top}} )
+      </div>
+    </div>
+  </div>
+</div>

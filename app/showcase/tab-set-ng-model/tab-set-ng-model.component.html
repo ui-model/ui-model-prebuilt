@@ -1,0 +1,8 @@
+<ul #select="uiSelect" [(ngModel)]="selection" class="nav nav-tabs" uiSelect>
+  <li *ngFor="let option of options" class="nav-item">
+    <a (click)="select.select(option)" [class.active]="select.selected(option)"
+       class="nav-link">{{option.label}}</a>
+  </li>
+</ul>
+
+<app-json-viewer [value]="selection"></app-json-viewer>

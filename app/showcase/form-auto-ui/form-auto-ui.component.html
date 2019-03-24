@@ -1,0 +1,21 @@
+<form (submit)="submit()">
+  <fieldset>
+    <legend>Register Form</legend>
+    <ui-form-group *ngIf="form" [group]="form" [readonly]="readonly"></ui-form-group>
+  </fieldset>
+
+  <div class="form-group">
+    <button class="btn btn-primary btn-block" type="submit">Submit</button>
+    <button (click)="form.disable()" *ngIf="form.enabled" class="btn btn-secondary btn-block" type="button">Disable this
+      form
+    </button>
+    <button (click)="form.enable()" *ngIf="form.disabled" class="btn btn-secondary btn-block" type="button">Enable this
+      form
+    </button>
+    <label>
+      <input #chkReadonly (change)="readonly = chkReadonly.checked" type="checkbox">
+      Read-only
+    </label>
+  </div>
+</form>
+<app-json-viewer [value]="form.value"></app-json-viewer>

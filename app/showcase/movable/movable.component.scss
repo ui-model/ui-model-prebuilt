@@ -1,0 +1,25 @@
+@import "../../shared/styles/common";
+
+:host {
+  display: block;
+}
+
+.playground {
+  position: relative;
+  background: $gray-300;
+  height: 500px;
+}
+
+.movable {
+  position: absolute;
+  cursor: move;
+  left: 100px;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+
+.no-selectable {
+  user-select: none;
+}

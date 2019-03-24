@@ -1,0 +1,25 @@
+@import "../../../shared/styles/common";
+
+:host {
+  display: block;
+}
+
+pre {
+  border: 1px solid $nav-tabs-link-hover-border-color;
+  border-top: none;
+  padding: 0.5em;
+}
+
+/deep/ .empty {
+  color: $warning;
+}
+
+.author {
+  &:not(:last-child) {
+    margin-right: 0.5em;
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+}

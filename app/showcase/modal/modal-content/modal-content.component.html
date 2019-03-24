@@ -1,0 +1,20 @@
+<div class="modal-header">
+  <h5 class="modal-title">
+    {{title}}
+    <button (click)="cancel.emit()" aria-label="Close" class="close" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </h5>
+</div>
+<div class="modal-body">
+  <ng-content></ng-content>
+</div>
+<div class="modal-footer" uiCountDown #countDown="uiCountDown" [initialValue]="5" (done)="cancel.emit()">
+  <button type="button" class="btn btn-primary" [disabled]="countDown.running" (click)="countDown.start()" i18n>
+    Save changes
+    <span *ngIf="countDown.running">
+    ( {{countDown.value}} )
+    </span>
+  </button>
+  <button type="button" class="btn btn-secondary" (click)="cancel.emit()" i18n>Cancel</button>
+</div>

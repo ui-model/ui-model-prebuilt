@@ -1,0 +1,14 @@
+<span (click)="toggle.turnOff()" *ngIf="toggle.isOn" class="custom-button">
+  <i class="fa fa-toggle-on"></i>
+  <span i18n>On</span>
+</span>
+
+<span class="custom-button" (click)="toggle.turnOn()" *ngIf="toggle.isOff">
+  <i class="fa fa-toggle-off"></i>
+  <span i18n>Off</span>
+</span>
+
+<span class="btn" [class.btn-primary]="toggle.isOn" (click)="toggle.toggle()">
+  <span i18n>isOn?</span>
+  {{toggle.isOn}}
+</span>

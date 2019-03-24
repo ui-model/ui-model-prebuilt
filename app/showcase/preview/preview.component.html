@@ -1,0 +1,5 @@
+<input #uploader multiple type="file"/>
+
+<hr>
+
+<img *ngFor="let file of toFiles(uploader.files)" [srcFile]="file"/>

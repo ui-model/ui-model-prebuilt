@@ -1,0 +1,22 @@
+<form #form="ngForm" (submit)="submit(form)" name="form">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input #fieldUsername="ngModel" [(ngModel)]="user.username" class="form-control"
+           id="username" minlength="4" name="username" required/>
+    <ui-field-error [field]="fieldUsername"></ui-field-error>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input #fieldEmail="ngModel" [(ngModel)]="user.email" class="form-control"
+           email id="email" name="email" required/>
+    <ui-field-error [field]="fieldEmail"></ui-field-error>
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit">Submit</button>
+    <button (click)="reset(form)" class="btn btn-secondary" type="button">Reset</button>
+  </div>
+</form>
+
+<app-json-viewer [value]="report"></app-json-viewer>

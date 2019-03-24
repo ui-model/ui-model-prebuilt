@@ -1,0 +1,13 @@
+<p *ngIf="meta?.authors|isNotEmpty" class="badge-list">
+  <span i18n>Authors:</span>
+  <a *ngFor="let author of meta.authors" [routerLink]="['/authors', author.id]" class="author">{{author.name}}</a>
+</p>
+<ul class="nav nav-tabs" uiSelect #types="uiSelect" [(ngModel)]="meta.type">
+  <li class="nav-item" *ngFor="let type of meta.types">
+    <a class="nav-link" [class.active]="types.selected(type)" (click)="types.select(type)">
+      {{type}}
+    </a>
+  </li>
+</ul>
+<pre [innerHTML]="meta.source | highlight | default:'<div class=empty>(Empty)</div>'">
+</pre>

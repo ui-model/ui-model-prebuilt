@@ -1,0 +1,17 @@
+:host {
+  display: block;
+}
+
+.nav {
+  flex-wrap: wrap;
+
+  .nav-item {
+    + .nav-item {
+      margin-left: 0;
+    }
+
+    .nav-link {
+      padding: 4px 8px;
+    }
+  }
+}

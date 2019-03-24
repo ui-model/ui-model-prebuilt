@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+
+.badge-list {
+  .badge {
+    margin-right: 0.5em;
+    font-weight: normal;
+  }
+}
+
+.modal-header {
+  .modal-title {
+    flex: auto;
+  }
+}
