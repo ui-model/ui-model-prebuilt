@@ -24,83 +24,83 @@
 </button><button _ngcontent-serverapp-c117="" type="button" class="btn btn-primary"> Form
 </button><button _ngcontent-serverapp-c117="" type="button" class="btn btn-primary"> Prompt
 </button></app-modal><!----><app-document-viewer _ngcontent-serverapp-c148="" _nghost-serverapp-c146=""><!----><div _ngcontent-serverapp-c146="" class="alert alert-danger"> No documentation yet
-</div><!----></app-document-viewer></div><div _ngcontent-serverapp-c148="" class="col-md-6"><app-source-viewer _ngcontent-serverapp-c148="" _nghost-serverapp-c147=""><p _ngcontent-serverapp-c147="" class="badge-list"><span _ngcontent-serverapp-c147="">Authors:</span><a _ngcontent-serverapp-c147="" class="author" href="/authors/wzc">Zhicheng Wang</a><!----></p><!----><ul _ngcontent-serverapp-c147="" uiselect="" class="nav nav-tabs ng-valid ng-touched ng-dirty"><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link active"> html </a></li><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link"> ts </a></li><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link"> scss </a></li><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link"> spec.ts </a></li><!----></ul><pre _ngcontent-serverapp-c147=""><span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Embedded Content<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"toggle.toggle()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Toggle
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">ui-modal</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">"toggle.isOn"</span> (<span class="hljs-attr">cancel</span>)=<span class="hljs-string">"toggle.close()"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">app-modal-content</span> (<span class="hljs-attr">cancel</span>)=<span class="hljs-string">"toggle.close()"</span> (<span class="hljs-attr">close</span>)=<span class="hljs-string">"toggle.close()"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Modal title"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-    This is a test
-  <span class="hljs-tag">&lt;/<span class="hljs-name">app-modal-content</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ui-modal</span>&gt;</span>
+</div><!----></app-document-viewer></div><div _ngcontent-serverapp-c148="" class="col-md-6"><app-source-viewer _ngcontent-serverapp-c148="" _nghost-serverapp-c147=""><p _ngcontent-serverapp-c147="" class="badge-list"><span _ngcontent-serverapp-c147="">Authors:</span><a _ngcontent-serverapp-c147="" class="author" href="/authors/wzc">Zhicheng Wang</a><!----></p><!----><ul _ngcontent-serverapp-c147="" uiselect="" class="nav nav-tabs ng-valid ng-touched ng-dirty"><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link active"> html </a></li><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link"> ts </a></li><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link"> scss </a></li><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link"> spec.ts </a></li><!----></ul><pre _ngcontent-serverapp-c147="">&lt;h4&gt;<span class="hljs-type">Embedded</span> <span class="hljs-type">Content</span>&lt;/h4&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-primary"</span> (click)=<span class="hljs-string">"toggle.toggle()"</span> i18n&gt;
+  <span class="hljs-type">Toggle</span>
+&lt;/button&gt;
+&lt;ui-modal *ngIf=<span class="hljs-string">"toggle.isOn"</span> (cancel)=<span class="hljs-string">"toggle.close()"</span>&gt;
+  &lt;app-modal-content (cancel)=<span class="hljs-string">"toggle.close()"</span> (close)=<span class="hljs-string">"toggle.close()"</span> title=<span class="hljs-string">"Modal title"</span> i18n&gt;
+    <span class="hljs-type">This</span> is a test
+  &lt;/app-modal-content&gt;
+&lt;/ui-modal&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">hr</span>/&gt;</span>
+&lt;hr/&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Service<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-info"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"info()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Info
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;h4&gt;<span class="hljs-type">Service</span>&lt;/h4&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-info"</span> (click)=<span class="hljs-string">"info()"</span> i18n&gt;
+  <span class="hljs-type">Info</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-success"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"success()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Success
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-success"</span> (click)=<span class="hljs-string">"success()"</span> i18n&gt;
+  <span class="hljs-type">Success</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-warning"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"warning()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Warning
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-warning"</span> (click)=<span class="hljs-string">"warning()"</span> i18n&gt;
+  <span class="hljs-type">Warning</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-danger"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"error()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Error / Danger
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-danger"</span> (click)=<span class="hljs-string">"error()"</span> i18n&gt;
+  <span class="hljs-type">Error</span> / <span class="hljs-type">Danger</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"confirm()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Confirm
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-primary"</span> (click)=<span class="hljs-string">"confirm()"</span> i18n&gt;
+  <span class="hljs-type">Confirm</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"form()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Form
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-primary"</span> (click)=<span class="hljs-string">"form()"</span> i18n&gt;
+  <span class="hljs-type">Form</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"prompt()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Prompt
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-primary"</span> (click)=<span class="hljs-string">"prompt()"</span> i18n&gt;
+  <span class="hljs-type">Prompt</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">hr</span>/&gt;</span>
+&lt;hr/&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Service (Custom)<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"custom()"</span> <span class="hljs-attr">i18n</span>&gt;</span>Custom<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;h4&gt;<span class="hljs-type">Service</span> (<span class="hljs-type">Custom</span>)&lt;/h4&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-primary"</span> (click)=<span class="hljs-string">"custom()"</span> i18n&gt;<span class="hljs-type">Custom</span>&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">hr</span>/&gt;</span>
+&lt;hr/&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Service (convenience method)<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-info"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"info2()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Info
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;h4&gt;<span class="hljs-type">Service</span> (convenience method)&lt;/h4&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-info"</span> (click)=<span class="hljs-string">"info2()"</span> i18n&gt;
+  <span class="hljs-type">Info</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-success"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"success2()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Success
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-success"</span> (click)=<span class="hljs-string">"success2()"</span> i18n&gt;
+  <span class="hljs-type">Success</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-warning"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"warning2()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Warning
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-warning"</span> (click)=<span class="hljs-string">"warning2()"</span> i18n&gt;
+  <span class="hljs-type">Warning</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-danger"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"error2()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Error / Danger
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-danger"</span> (click)=<span class="hljs-string">"error2()"</span> i18n&gt;
+  <span class="hljs-type">Error</span> / <span class="hljs-type">Danger</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"confirm2()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Confirm
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-primary"</span> (click)=<span class="hljs-string">"confirm2()"</span> i18n&gt;
+  <span class="hljs-type">Confirm</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"form2()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Form
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-primary"</span> (click)=<span class="hljs-string">"form2()"</span> i18n&gt;
+  <span class="hljs-type">Form</span>
+&lt;/button&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-primary"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"prompt2()"</span> <span class="hljs-attr">i18n</span>&gt;</span>
-  Prompt
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"btn btn-primary"</span> (click)=<span class="hljs-string">"prompt2()"</span> i18n&gt;
+  <span class="hljs-type">Prompt</span>
+&lt;/button&gt;
 </pre></app-source-viewer></div></div><ui-modal-list _ngcontent-serverapp-c148="" _nghost-serverapp-c96=""><!----></ui-modal-list><ui-toast-list _ngcontent-serverapp-c148="" _nghost-serverapp-c84=""><!----></ui-toast-list></app-showcase-layout><!----></div></div></div></app-root>
-<script src="runtime-es2015.82b8f9d2ddb90eb056a8.js" type="module"></script><script src="runtime-es5.82b8f9d2ddb90eb056a8.js" nomodule="" defer=""></script><script src="polyfills-es5.1d9ea817e245f5e30d27.js" nomodule="" defer=""></script><script src="polyfills-es2015.a7d14b8b0a93b040018d.js" type="module"></script><script src="main-es2015.e69adb12a3ad76fb7375.js" type="module"></script><script src="main-es5.e69adb12a3ad76fb7375.js" nomodule="" defer=""></script>
+<script src="runtime-es2015.82b8f9d2ddb90eb056a8.js" type="module"></script><script src="runtime-es5.82b8f9d2ddb90eb056a8.js" nomodule="" defer=""></script><script src="polyfills-es5.1d9ea817e245f5e30d27.js" nomodule="" defer=""></script><script src="polyfills-es2015.a7d14b8b0a93b040018d.js" type="module"></script><script src="main-es2015.77e57a1ac1c1b5953f45.js" type="module"></script><script src="main-es5.77e57a1ac1c1b5953f45.js" nomodule="" defer=""></script>
 
 </body></html>

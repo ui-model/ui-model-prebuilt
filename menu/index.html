@@ -23,29 +23,29 @@
   ]
 }</pre><!----></app-json-viewer></app-menu><!----><app-document-viewer _ngcontent-serverapp-c148="" _nghost-serverapp-c146=""><!----><div _ngcontent-serverapp-c146="" class="alert alert-danger"> No documentation yet
 </div><!----></app-document-viewer></div><div _ngcontent-serverapp-c148="" class="col-md-6"><app-source-viewer _ngcontent-serverapp-c148="" _nghost-serverapp-c147=""><p _ngcontent-serverapp-c147="" class="badge-list"><span _ngcontent-serverapp-c147="">Authors:</span><a _ngcontent-serverapp-c147="" class="author" href="/authors/wzc">Zhicheng Wang</a><!----></p><!----><ul _ngcontent-serverapp-c147="" uiselect="" class="nav nav-tabs ng-valid ng-touched ng-dirty"><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link active"> html </a></li><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link"> ts </a></li><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link"> scss </a></li><li _ngcontent-serverapp-c147="" class="nav-item"><a _ngcontent-serverapp-c147="" class="nav-link"> spec.ts </a></li><!----></ul><pre _ngcontent-serverapp-c147="">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"dropdown-menu static"</span>&gt;
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let option of options"</span> (<span class="hljs-attr">click</span>)=<span class="hljs-string">"select.select(option)"</span> [<span class="hljs-attr">class.active</span>]=<span class="hljs-string">"select.selected(option)"</span>
-    <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span>&gt;</span>
+  &lt;a *ngFor=<span class="hljs-string">"let option of options"</span> (click)=<span class="hljs-string">"select.select(option)"</span> [<span class="hljs-class"><span class="hljs-keyword">class</span>.<span class="hljs-title">active</span>]</span>=<span class="hljs-string">"select.selected(option)"</span>
+    <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"dropdown-item"</span>&gt;
     {{option.label}}
-  <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span>
-<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  &lt;/a&gt;
+&lt;/div&gt;
 
-<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">hr</span>&gt;</span>
+&lt;hr&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav nav-pills"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">li</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let option of options; let last=last"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-item"</span> [<span class="hljs-attr">class.float-sm-right</span>]=<span class="hljs-string">"last"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-link"</span> <span class="hljs-attr">uiPreventDefault</span> <span class="hljs-attr">href</span> [<span class="hljs-attr">class.active</span>]=<span class="hljs-string">"select.selected(option)"</span>
-      (<span class="hljs-attr">mouseenter</span>)=<span class="hljs-string">"select.select(option)"</span>&gt;</span>{{option.label}}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> *<span class="hljs-attr">ngIf</span>=<span class="hljs-string">"select.selected(option)"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-menu"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> *<span class="hljs-attr">ngFor</span>=<span class="hljs-string">"let item of option.items"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown-item"</span> [<span class="hljs-attr">class.active</span>]=<span class="hljs-string">"subMenu.selected(item)"</span>
-        (<span class="hljs-attr">mouseenter</span>)=<span class="hljs-string">"subMenu.select(item)"</span>&gt;</span>
+&lt;ul <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"nav nav-pills"</span>&gt;
+  &lt;li *ngFor=<span class="hljs-string">"let option of options; let last=last"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"nav-item"</span> [<span class="hljs-class"><span class="hljs-keyword">class</span>.<span class="hljs-title">float-sm-right</span>]</span>=<span class="hljs-string">"last"</span>&gt;
+    &lt;a <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"nav-link"</span> uiPreventDefault href [<span class="hljs-class"><span class="hljs-keyword">class</span>.<span class="hljs-title">active</span>]</span>=<span class="hljs-string">"select.selected(option)"</span>
+      (mouseenter)=<span class="hljs-string">"select.select(option)"</span>&gt;{{option.label}}&lt;/a&gt;
+    &lt;div *ngIf=<span class="hljs-string">"select.selected(option)"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"dropdown-menu"</span>&gt;
+      &lt;a *ngFor=<span class="hljs-string">"let item of option.items"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"dropdown-item"</span> [<span class="hljs-class"><span class="hljs-keyword">class</span>.<span class="hljs-title">active</span>]</span>=<span class="hljs-string">"subMenu.selected(item)"</span>
+        (mouseenter)=<span class="hljs-string">"subMenu.select(item)"</span>&gt;
         {{item.label}}
-      <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">app-json-viewer</span> [<span class="hljs-attr">value</span>]=<span class="hljs-string">"select.selection"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">app-json-viewer</span>&gt;</span>
-</span></pre></app-source-viewer></div></div><ui-modal-list _ngcontent-serverapp-c148="" _nghost-serverapp-c96=""><!----></ui-modal-list><ui-toast-list _ngcontent-serverapp-c148="" _nghost-serverapp-c84=""><!----></ui-toast-list></app-showcase-layout><!----></div></div></div></app-root>
-<script src="runtime-es2015.82b8f9d2ddb90eb056a8.js" type="module"></script><script src="runtime-es5.82b8f9d2ddb90eb056a8.js" nomodule="" defer=""></script><script src="polyfills-es5.1d9ea817e245f5e30d27.js" nomodule="" defer=""></script><script src="polyfills-es2015.a7d14b8b0a93b040018d.js" type="module"></script><script src="main-es2015.e69adb12a3ad76fb7375.js" type="module"></script><script src="main-es5.e69adb12a3ad76fb7375.js" nomodule="" defer=""></script>
+&lt;app-json-viewer [value]=<span class="hljs-string">"select.selection"</span>&gt;&lt;/app-json-viewer&gt;
+</pre></app-source-viewer></div></div><ui-modal-list _ngcontent-serverapp-c148="" _nghost-serverapp-c96=""><!----></ui-modal-list><ui-toast-list _ngcontent-serverapp-c148="" _nghost-serverapp-c84=""><!----></ui-toast-list></app-showcase-layout><!----></div></div></div></app-root>
+<script src="runtime-es2015.82b8f9d2ddb90eb056a8.js" type="module"></script><script src="runtime-es5.82b8f9d2ddb90eb056a8.js" nomodule="" defer=""></script><script src="polyfills-es5.1d9ea817e245f5e30d27.js" nomodule="" defer=""></script><script src="polyfills-es2015.a7d14b8b0a93b040018d.js" type="module"></script><script src="main-es2015.77e57a1ac1c1b5953f45.js" type="module"></script><script src="main-es5.77e57a1ac1c1b5953f45.js" nomodule="" defer=""></script>
 
 </body></html>
